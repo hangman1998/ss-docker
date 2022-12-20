@@ -1,2 +1,2 @@
-FROM teddysun/v2ray:5.1.0
-COPY config.json  /etc/v2ray/
+FROM teddysun/shadowsocks-rust:1.15.1
+COPY config.json  /etc/shadowsocks-rust/
