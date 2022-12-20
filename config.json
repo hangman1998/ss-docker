@@ -1,29 +1,9 @@
 {
-  "inbounds": [
-    {
-      "port": 80,
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "75e01251-3453-44af-9c5d-81d98d9521da",
-            "level": 1,
-            "alterId": 64
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/ws"
-        }
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    }
-  ]
+    "server":"0.0.0.0",
+    "server_port":80,
+    "password":"lzINpoXU41gJ",
+    "timeout":300,
+    "method":"aes-256-gcm",
+    "nameserver":"8.8.8.8",
+    "mode":"tcp_and_udp"
 }
