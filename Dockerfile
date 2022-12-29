@@ -12,7 +12,7 @@ COPY config.json  /etc/shadowsocks-rust/config.json
 # 	&& chmod +x /root/shadowsocks-rust-debian.sh \
 # 	&& /root/shadowsocks-rust-debian.sh "${TARGETPLATFORM}" \
 # 	&& rm -f /root/shadowsocks-rust-debian.sh \
-# 	&& chmod +x /root/entry.sh \
+	&& chmod +x /root/entry.sh \
 # 	&& chmod +x /root/v2ray-plugin.sh \
 # 	&& /root/v2ray-plugin.sh "${TARGETPLATFORM}" \
 # 	&& rm -f /root/v2ray-plugin.sh \
