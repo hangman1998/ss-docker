@@ -6,13 +6,14 @@ COPY v2ray-plugin.sh /root/v2ray-plugin.sh
 COPY entry.sh /root/entry.sh
 COPY shadowsocks-rust-debian.sh /root/shadowsocks-rust-debian.sh
 COPY config.json  /etc/shadowsocks-rust/config.json
-RUN set -ex \
+RUN chmod +x /root/entry.sh
+# RUN set -ex \
 # 	&& apt-get update \
 # 	&& apt-get install -y --no-install-recommends wget ca-certificates xz-utils gettext-base \
 # 	&& chmod +x /root/shadowsocks-rust-debian.sh \
 # 	&& /root/shadowsocks-rust-debian.sh "${TARGETPLATFORM}" \
 # 	&& rm -f /root/shadowsocks-rust-debian.sh \
-	&& chmod +x /root/entry.sh \
+#	&& chmod +x /root/entry.sh \
 # 	&& chmod +x /root/v2ray-plugin.sh \
 # 	&& /root/v2ray-plugin.sh "${TARGETPLATFORM}" \
 # 	&& rm -f /root/v2ray-plugin.sh \
