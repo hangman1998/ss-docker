@@ -6,7 +6,7 @@ COPY v2ray-plugin.sh /root/v2ray-plugin.sh
 COPY entry.sh /root/entry.sh
 COPY shadowsocks-rust-debian.sh /root/shadowsocks-rust-debian.sh
 COPY config.json  /etc/shadowsocks-rust/config.json
-# RUN set -ex \
+RUN set -ex \
 # 	&& apt-get update \
 # 	&& apt-get install -y --no-install-recommends wget ca-certificates xz-utils gettext-base \
 # 	&& chmod +x /root/shadowsocks-rust-debian.sh \
