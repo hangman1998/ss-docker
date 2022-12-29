@@ -7,5 +7,5 @@
   "nameserver": "8.8.8.8",
   "mode": "tcp_only",
   "plugin": "v2ray-plugin",
-  "plugin_opts": "server;path=/$PATH;loglevel=none;host=$HOST"
+  "plugin_opts": "server;path=/$WS_PATH;loglevel=none;host=$HOST"
 }
