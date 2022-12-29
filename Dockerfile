@@ -20,5 +20,5 @@ COPY config.json  /etc/shadowsocks-rust/config.json
 # 	&& apt-get -y clean \
 # 	&& rm -rf /var/lib/apt/lists/*
 ENV TZ=Asia/Tehran
-ENTRYPOINT ["/entry.sh"]
+ENTRYPOINT ["/root/entry.sh"]
 CMD [ "/usr/bin/ssservice", "server", "--log-without-time", "-c", "/etc/shadowsocks-rust/config.json" ]
