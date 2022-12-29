@@ -1,4 +1,4 @@
-FROM teddysun/shadowsocks-rust:1.15.1
+FROM teddysun/shadowsocks-rust:alpine-1.15.2
 RUN apk add --no-cache gettext
 COPY config.json  /etc/shadowsocks-rust/config.json.var
 COPY entry.sh /entry.sh
